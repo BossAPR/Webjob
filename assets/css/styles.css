@@ -1,0 +1,180 @@
+/*========== General Styles ==========*/
+body {
+  font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ Prompt */
+  margin: 0; /* ไม่มี margin รอบ body */
+  padding: 0; /* ไม่มี padding รอบ body */
+  background-image: url('assets/account_images/HP.jpg'); /* ตั้งภาพพื้นหลัง */
+  background-repeat: no-repeat; /* ไม่ให้ภาพพื้นหลังซ้ำ */
+  background-size: cover; /* ปรับภาพพื้นหลังให้เต็มหน้าจอ */
+  color: #333; /* สีตัวอักษรเริ่มต้น */
+}
+
+/*========== Scroll Top Button ==========*/
+.scrolltop {
+  position: fixed; /* ตำแหน่งคงที่ */
+  bottom: 20px; /* ห่างจากล่าง 20px */
+  right: 20px; /* ห่างจากขวา 20px */
+  background-color: #f1f1f1; /* สีพื้นหลังของปุ่ม */
+  border: none; /* ไม่มีกรอบ */
+  border-radius: 50%; /* ทำให้ปุ่มกลม */
+  padding: 10px; /* เพิ่ม padding ภายในปุ่ม */
+  cursor: pointer; /* แสดงว่าเป็นปุ่มคลิกได้ */
+  display: none; /* ซ่อนไว้ตามค่าเริ่มต้น */
+}
+
+/*========== Header Styles ==========*/
+.l-header {
+  background-color: rgba(255, 255, 255, 0.9); /* สีขาวโปร่งใส */
+  position: sticky; /* ติดอยู่ที่ด้านบนเมื่อเลื่อน */
+  top: 100; /* ระยะจากด้านบน */
+  z-index: 1000; /* ให้แสดงอยู่ข้างบนสุด */
+}
+
+.nav {
+  display: flex; /* แสดงเป็นแนวนอน */
+  justify-content: space-between; /* จัดระยะห่างระหว่างองค์ประกอบ */
+  align-items: center; /* จัดให้กลางแนวตั้ง */
+  padding: 20px; /* เพิ่ม padding รอบ nav */
+}
+
+.nav__menu {
+  display: flex; /* แสดงเป็นแนวนอน */
+  align-items: center; /* จัดให้กลางแนวตั้ง */
+}
+
+.nav__list {
+  display: flex; /* แสดงเป็นแนวนอน */
+  list-style: none; /* ไม่มีลิสต์สไตล์ */
+  padding: 0; /* ไม่มี padding */
+  margin: 0; /* ไม่มี margin */
+}
+
+.nav__item {
+  margin: 0 15px; /* เพิ่มระยะห่างซ้าย-ขวาของแต่ละรายการ */
+}
+
+.nav__link {
+  text-decoration: none; /* ไม่มีการขีดเส้นใต้ */
+  color: #333; /* สีของลิงก์ */
+  padding: 5px 10px; /* เพิ่ม padding รอบลิงก์ */
+  border-radius: 5px; /* มุมโค้งของลิงก์ */
+  transition: background 0.3s ease; /* การเปลี่ยนแปลงสำหรับเอฟเฟกต์ hover */
+}
+
+.nav__link:hover,
+.nav__link.active-link {
+  background-color: #007BFF; /* สีพื้นหลังเมื่อ hover หรือ active */
+  color: white; /* เปลี่ยนสีตัวอักษรเป็นขาว */
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px; /* เพิ่ม padding รอบปุ่ม */
+  border: none; /* ไม่มีกรอบ */
+  border-radius: 5px; /* มุมโค้งของปุ่ม */
+  cursor: pointer; /* แสดงว่าเป็นปุ่มคลิกได้ */
+  font-weight: bold; /* ทำให้ตัวอักษรหนา */
+  transition: background 0.3s ease; /* การเปลี่ยนแปลงสำหรับเอฟเฟกต์ hover */
+}
+
+.btn.info {
+  background-color: #17a2b8; /* สีของปุ่ม info */
+  color: white; /* สีตัวอักษรเป็นขาว */
+}
+
+.btn.success {
+  background-color: #28a745; /* สีของปุ่ม success */
+  color: white; /* สีตัวอักษรเป็นขาว */
+}
+
+.btn:hover {
+  opacity: 0.9; /* เปลี่ยนความทึบเล็กน้อยเมื่อ hover */
+}
+
+/*========== Home Section Styles ==========*/
+.home {
+  display: flex; /* แสดงเป็นแนวนอน */
+  align-items: center; /* จัดให้กลางแนวตั้ง */
+  justify-content: center; /* จัดให้กลางแนวนอน */
+  height: 100vh; /* ความสูงเต็ม viewport */
+  text-align: center; /* จัดกลางข้อความ */
+}
+
+.home__title {
+  font-size: 2.5rem; /* ขนาดฟอนต์ของชื่อ */
+  margin-bottom: 5px; /* ลดระยะห่างด้านล่าง */
+  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+}
+
+.home__title2 {
+  font-size: 1.5rem; /* ขนาดฟอนต์ของซับไตเติ้ล */
+  margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+/*========== Job Section Styles ==========*/
+.menu {
+  padding: 30px 0; /* เพิ่ม padding ด้านบนและล่าง */
+}
+
+.menu__container {
+  display: grid; /* แสดงเป็นกริด */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* กริดแบบตอบสนอง */
+  gap: 20px; /* ระยะห่างระหว่างรายการในกริด */
+}
+
+.menu__content {
+  background-color: #f9f9f9; /* พื้นหลังสีอ่อนสำหรับรายการงาน */
+  padding: 20px; /* เพิ่ม padding รอบเนื้อหา */
+  border-radius: 10px; /* มุมโค้ง */
+  text-align: center; /* จัดกลางข้อความ */
+}
+
+.menu__img {
+  width: 100%; /* ขนาดภาพแบบตอบสนอง */
+  height: auto; /* รักษาสัดส่วนภาพ */
+  border-radius: 10px; /* มุมโค้งของภาพ */
+}
+
+/*========== Contact Section Styles ==========*/
+.contact {
+  padding: 30px 0; /* เพิ่ม padding ด้านบนและล่างสำหรับส่วนติดต่อ */
+  text-align: center; /* จัดกลางข้อความ */
+}
+
+/*========== Footer Styles ==========*/
+.footer {
+  background-color: #343a40; /* พื้นหลังสีเข้ม */
+  color: white; /* สีตัวอักษรเป็นขาว */
+  padding: 40px 0; /* เพิ่ม padding ด้านบนและล่าง */
+  text-align: center; /* จัดกลางข้อความ */
+}
+
+.footer__content {
+  margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.footer__link {
+  color: white; /* สีของลิงก์ */
+  text-decoration: none; /* ไม่มีการขีดเส้นใต้ */
+}
+
+.footer__link:hover {
+  text-decoration: underline; /* ขีดเส้นใต้เมื่อ hover */
+}
+
+/*========== Responsive Styles ==========*/
+@media (max-width: 768px) {
+  .nav__menu {
+      flex-direction: column; /* จัดเรียงเป็นแนวตั้งในหน้าจอเล็ก */
+      display: none; /* ซ่อนไว้ตามค่าเริ่มต้น จะแสดงเมื่อ toggle */
+  }
+
+  .nav__toggle {
+      display: block; /* แสดงปุ่ม toggle */
+  }
+
+  .home__title,
+  .home__title2 {
+      font-size: 1.8rem; /* ปรับขนาดฟอนต์สำหรับหน้าจอเล็ก */
+  }
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* จัดให้เมนูอยู่ตรงกลางแนวตั้ง */
+}
+
+.admin-header h1 {
+    margin: 0;
+}
+
+.admin-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* เพิ่มช่องว่างระหว่างเมนู */
+    justify-content: flex-start; /* จัดชิดซ้าย */
+    align-items: center; /* จัดให้เมนูอยู่ตรงกลางแนวตั้ง */
+}
+
+.admin-header nav ul li {
+    display: inline-block;
+}
+
+.admin-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* เพิ่ม padding ให้เมนู */
+    display: block; /* ทำให้การแสดงผลเมนูเป็นบล็อก */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+.admin-header nav ul li a:hover {
+    background-color: #555; /* สีพื้นหลังเมื่อ hover */
+}
+
+.main-content {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+th, td {
+    text-align: center;
+}
